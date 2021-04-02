@@ -3,17 +3,20 @@
         {
           "title": "Problem",
 		  "type": "Ideation",
-		  "isChecked":false
+		  "isChecked":false,
+		  "id": "i1"
         },
 				{
           "title": "Solution",
 		  "type": "Ideation",
-		  "isChecked":false
+		  "isChecked":false,
+		  "id": "i2"
         },
 				{
           "title": "Team",
 		  "type": "Ideation",
-		  "isChecked":false
+		  "isChecked":false,
+		  "id": "i3"
         }
     ],
 
@@ -21,12 +24,14 @@
 			{
 				"title": "Ecosystems",
 				"type": "Validation",
-				"isChecked":false
+				"isChecked":false,
+				"id": "v1"
 			},
 			{
 				"title": "Results",
 				"type": "Validation",
-				"isChecked":false
+				"isChecked":false,
+				"id": "v2"
 			}
 		]
     }
