@@ -54,23 +54,56 @@ $black: #465C5D;
     .main-div{
       display: flex;
       align-items: center;
-      margin: 1rem 0;
+      margin: 2rem 0;
       .main-card{
         position: relative;
         display: flex;
         align-items: center;
-        margin: 0 30px;
+        
+        .card-border{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin: 0 30px;
+          box-shadow: 6px 5px 1px 3px $gray;
+          border: 2px $main-color solid;
+          border-radius: 10px;
+          
+        }
         .card{
           display: flex;
           justify-content: space-around;
           align-items: center;
+          margin: 0 30px;
+          box-shadow: 6px 5px 1px 3px $gray;
           img{
             width: 25%;
             height: 25%;
           }
         }
+        .view-builder{
+          color: $main-color;
+        }
+        .img-color{
+          width: 25%;
+          height: 25%;
+          
+        }
+        .img-gris{
+          width: 25%;
+          height: 5%;
+          filter: grayscale(1);
+        } 
+        .hidden-date{
+          display: none;
+          float: right;
+        }
+        
       }
       
+    }
+    .main-title h2{
+      color: $black;
     }
   }
   .cancel_use__container{
@@ -103,6 +136,7 @@ $black: #465C5D;
     display: block;
   }
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
