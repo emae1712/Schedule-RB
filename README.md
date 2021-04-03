@@ -11,11 +11,11 @@
 * [1. About the project](#1-about-project)
 * [2. Technologies used](#2-technologies-used)
 
-## 1. 🧐About the project
-
 <p >
   <img align="right" height="500px" src="https://i.ibb.co/9q8fcKW/Mobile-view.gif" alt="Mobile-view">
 </p>
+
+## 1. 🧐About the project
 
 The present code challenge consists of creating a responsive web application, browsers
 and mobile, to build a Builder Schedule which contains a list of items that can be selected with an option button and rearranged with drag and drop.
