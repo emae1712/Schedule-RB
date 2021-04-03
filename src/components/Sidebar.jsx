@@ -2,14 +2,11 @@
 import React, {useState, useEffect} from "react";
 import Schedule from "./Schedule";
 import Data from "./Data.json";
+import '../styles/App.scss'
 // console.log(Data);
 const Sidebar = () =>{
   const [category, setCategory] = useState('');
   const [cards, setCards] = useState('');
-  // const social = Data.Ideation.concat(Data.Validation)
-  // const ideation = Data.Ideation;
-  // const validation = Data.Validation;
-  // console.log(social);
 
   useEffect(()=>{
     setCards(Data)

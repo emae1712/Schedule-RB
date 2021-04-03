@@ -1,7 +1,39 @@
+
+.contenedor{
+  margin:1rem auto;
+  width: 95%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "header header"
+                        "sidebar schedule"
+                        "cancel_use cancel_use";
+
+  header{
+    grid-area: header;
+    text-align: center;
+    font-size: 1rem;
+    color: #c4c4c4;
+  }
+  .sidebar__container{
+    grid-area: sidebar;
+  }
+  .schedule__container{
+    grid-area: schedule;
+  }
+  .cancel_use__container{
+    grid-area: cancel_use;
+  }
+}
+.show-cellphone{
+  display: none;
+}
 .App {
   text-align: center;
 }
+@media only screen and (min-width: 600px) {
 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

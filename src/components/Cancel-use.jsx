@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/App.scss'
 
 const Cancel_use = () =>{
     return (
