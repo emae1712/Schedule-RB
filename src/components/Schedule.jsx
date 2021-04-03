@@ -32,36 +32,41 @@ const Schedule = ({category, cards}) =>{
 	}
     return (
       <>
-			
-				<h2>{category === 'socialInnovation'? 'Social Innovation' : ''}</h2>
+			<DragDropContext onDragEnd={handleOnDragEnd}>
+        <div className="main-title">
+          <h2>{category === 'socialInnovation'? 'Social Innovation' : ''}</h2>
+          <p className="show-web right">Due Date (Opcional)</p>
+        </div>
 				{category === 'socialInnovation'&& socialInnovation.map((card, index) =>(
-          <DragDropContext onDragEnd={handleOnDragEnd}>
           <Droppable droppableId="social">
             {(provided) =>(
-              <label  {...provided.droppableProps} ref={provided.innerRef}>
-                <input id = {card.id} type="radio" name={card.title} value={card.title} onClick={() => toggle(card.title)} checked={isCheck[card.title]}/>
+              <label  {...provided.droppableProps} ref={provided.innerRef}>                
                 <Draggable key = {card.id} draggableId={card.id} index={index}>
                   {(provided) =>(
-                    <div {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
-                      <div>
-                        {card.title}
-                        <p>view builder</p>
-                        <img src={Image} alt=""/>
+                    <div className="main-div" {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
+                      <input className="visible-web" id = {card.id} type="radio" name={card.title} value={card.title} onClick={() => toggle(card.title)} checked={isCheck[card.title]}/>
+                      <div className="main-card">
+                        <div className="card">
+                          <div >
+                            <h3>{card.title}</h3>
+                            <p>view builder</p>
+                          </div>
+                          <img src={Image} alt=""/>
                         </div>
                         <div className="show_checked">
                           <input type="date" name="date" id=""/>
                           <input type="time" name="" id=""/>
                         </div>
                       </div>
-                      
+                    </div>
                   )}
                 </Draggable>
                 {provided.placeholder}
               </label>
             )}
           </Droppable>
+					))}          
         </DragDropContext>
-					))}
 			
 				<h2>{category === 'all'? 'Ideation' : ''}</h2>
 				{category === 'all'&& cards.Ideation.map((card) =>(

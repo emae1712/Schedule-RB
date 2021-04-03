@@ -1,4 +1,8 @@
 
+$main-color: #1FAEBC;
+$second-color: #2274A5;
+$gray: #E8E9E9;
+$black: #465C5D;
 .contenedor{
   margin:1rem auto;
   width: 95%;
@@ -12,14 +16,62 @@
   header{
     grid-area: header;
     text-align: center;
-    font-size: 1rem;
-    color: #c4c4c4;
+    color: $black;
+    font-weight: normal;
   }
   .sidebar__container{
     grid-area: sidebar;
+    .btn-select{
+      color: $black;
+      font-weight: 600;
+      width: 80%;
+      background-color: $gray;
+      height: 2rem;
+      border: none;
+      outline: none;
+    }
+    .btn-unselect{
+      width: 80%;
+      background-color: #fff;
+      height: 2rem;
+      border: none;
+      outline: none;
+      &:hover {
+        background-color: $gray;
+      }
+    }
+    p{
+      color: grey;
+    }
   }
   .schedule__container{
     grid-area: schedule;
+    .main-title{
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .main-div{
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+      .main-card{
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: 0 30px;
+        .card{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          img{
+            width: 25%;
+            height: 25%;
+          }
+        }
+      }
+      
+    }
   }
   .cancel_use__container{
     grid-area: cancel_use;
@@ -31,8 +83,25 @@
 .App {
   text-align: center;
 }
-@media only screen and (min-width: 600px) {
-
+@media only screen and (max-width: 600px) {
+  .contenedor{
+    grid-template-areas: "header header"
+                        "sidebar sidebar"
+                        "cancel_use cancel_use"
+                        "schedule schedule";
+    header{
+      padding: 0 60px;
+    }
+  }
+  .visible-web{
+    opacity: 0;
+  }
+  .show-web{
+    display: none;
+  }
+  .show-cellphone{
+    display: block;
+  }
 }
 .App-logo {
   height: 40vmin;
