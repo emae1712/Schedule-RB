@@ -7,13 +7,15 @@
 
 ### Made by [Arango Melissa](https://github.com/emae1712)
 >Rebel Base Code Challenge
-## Index
-* [1. About the project](#1-about-project)
-* [2. Technologies used](#2-technologies-used)
 
 <p >
   <img align="right" height="500px" src="https://i.ibb.co/9q8fcKW/Mobile-view.gif" alt="Mobile-view">
 </p>
+
+## Index
+
+* [1. About the project](#1-about-project)
+* [2. Technologies used](#2-technologies-used)
 
 ## 1. 🧐About the project
 
