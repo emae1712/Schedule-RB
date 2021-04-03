@@ -16,7 +16,7 @@
 
 * [1. About the project](#1-about-the-project)
 * [2. Technologies used](#2-technologies-used)
-* [2. Contributing(#2-Contributing)
+* [3. Contributing](#3-Contributing)
 
 
 ## 1. 🧐About the project
