@@ -1,0 +1,173 @@
+
+$main-color: #1FAEBC;
+$second-color: #2274A5;
+$gray: #E8E9E9;
+$black: #465C5D;
+.contenedor{
+  margin:1rem auto;
+  width: 95%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: "header header"
+                        "sidebar schedule"
+                        "cancel_use cancel_use";
+
+  header{
+    grid-area: header;
+    text-align: center;
+    color: $black;
+    font-weight: normal;
+  }
+  .sidebar__container{
+    grid-area: sidebar;
+    .btn-select{
+      color: $black;
+      font-weight: 600;
+      width: 80%;
+      background-color: $gray;
+      height: 2rem;
+      border: none;
+      outline: none;
+    }
+    .btn-unselect{
+      width: 80%;
+      background-color: #fff;
+      height: 2rem;
+      border: none;
+      outline: none;
+      &:hover {
+        background-color: $gray;
+      }
+    }
+    p{
+      color: grey;
+    }
+  }
+  .schedule__container{
+    grid-area: schedule;
+    .main-title{
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .main-div{
+      display: flex;
+      align-items: center;
+      margin: 2rem 0;
+      .main-card{
+        position: relative;
+        display: flex;
+        align-items: center;
+        
+        .card-border{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin: 0 30px;
+          box-shadow: 6px 5px 1px 3px $gray;
+          border: 2px $main-color solid;
+          border-radius: 10px;
+          
+        }
+        .card{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin: 0 30px;
+          box-shadow: 6px 5px 1px 3px $gray;
+          img{
+            width: 25%;
+            height: 25%;
+          }
+        }
+        .view-builder{
+          color: $main-color;
+        }
+        .img-color{
+          width: 25%;
+          height: 25%;
+          
+        }
+        .img-gris{
+          width: 25%;
+          height: 5%;
+          filter: grayscale(1);
+        } 
+        .hidden-date{
+          display: none;
+          float: right;
+        }
+        
+      }
+      
+    }
+    .main-title h2{
+      color: $black;
+    }
+  }
+  .cancel_use__container{
+    grid-area: cancel_use;
+  }
+}
+.show-cellphone{
+  display: none;
+}
+.App {
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .contenedor{
+    grid-template-areas: "header header"
+                        "sidebar sidebar"
+                        "cancel_use cancel_use"
+                        "schedule schedule";
+    header{
+      padding: 0 60px;
+    }
+  }
+  .visible-web{
+    opacity: 0;
+  }
+  .show-web{
+    display: none;
+  }
+  .show-cellphone{
+    display: block;
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
