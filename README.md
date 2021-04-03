@@ -14,8 +14,10 @@
 
 ## Index
 
-* [1. About the project](#1-about-project)
+* [1. About the project](#1-about-the-project)
 * [2. Technologies used](#2-technologies-used)
+* [2. Contributing(#2-Contributing)
+
 
 ## 1. 🧐About the project
 
@@ -27,7 +29,9 @@ Also, the items on the right have a form with a date and time picker that displa
 
 The main objective of this project was to create a single page application, which is responsive, where you can select to drag and view a list of items, using the following technologies:
 
-- [x] [React Hooks]
-- [x] [JSX]
-- [x] [Sass]
+- [x] React Hooks
+- [x] JSX
+- [x] Sass
 
+## 3. 👥Contributing
+If someone wants to add or improve something, I invite you to collaborate directly in this repository: [Schedule](https://github.com/emae1712/Schedule-RB)
