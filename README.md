@@ -34,4 +34,4 @@ The main objective of this project was to create a single page application, whic
 - [x] Sass
 
 ## 3. 👥Contributing
-If someone wants to add or improve something, I invite you to collaborate directly in this repository: [Schedule](https://github.com/emae1712/Schedule-RB)
+If someone wants to add or improve something, I invite you to collaborate directly in this repository: [Schedule](https://github.com/emae1712/Schedule-RB/tree/master)
