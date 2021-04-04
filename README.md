@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+<p align="center">
+    <img  src="https://i.ibb.co/zZmhh6C/rebelbase.jpg" alt="rebelbase">
+  </a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Select Builder Schedule 📝
 
-## Available Scripts
+### Made by [Arango Melissa](https://github.com/emae1712)
+>Rebel Base Code Challenge
 
-In the project directory, you can run:
+<p >
+  <img align="right" height="500px" src="https://i.ibb.co/9q8fcKW/Mobile-view.gif" alt="Mobile-view">
+</p>
 
-### `npm start`
+## Index
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [1. About the project](#1-about-the-project)
+* [2. Technologies used](#2-technologies-used)
+* [3. Contributing](#3-Contributing)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## 1. 🧐About the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The present code challenge consists of creating a responsive web application, browsers
+and mobile, to build a Builder Schedule which contains a list of items that can be selected with an option button and rearranged with drag and drop.
+Also, the items on the right have a form with a date and time picker that displays when selected.
 
-### `npm run build`
+## 2. 👩‍💻Technologies used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The main objective of this project was to create a single page application, which is responsive, where you can select to drag and view a list of items, using the following technologies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [x] React Hooks
+- [x] JSX
+- [x] Sass
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 3. 👥Contributing
+If someone wants to add or improve something, I invite you to collaborate directly in this repository: [Schedule](https://github.com/emae1712/Schedule-RB/tree/master)

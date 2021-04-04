@@ -59,7 +59,7 @@ const Schedule = ({category, cards}) =>{
                   {(provided) =>(
                     <div className="main-div" {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
                       <input className="visible-web" id = {card.id} type="radio" name={card.title} value={card.title} onClick={() => toggle(card.title)} checked={isCheck[card.title]}/>
-                      <div className="main-card">
+                      <div className={ isCheck[card.title]=== true ? "main-card card-cellphone": "main-card" } >
                         <div className={ isCheck[card.title]=== true ? "card-border": "card" } >
                           <div >
                             <h3>{card.title}</h3>
@@ -67,7 +67,8 @@ const Schedule = ({category, cards}) =>{
                           </div>
                           <img src={Image} alt="" className={ isCheck[card.title]=== true ? "img-color": "img-gris" }/>
                         </div>
-                        <div className={ isCheck[card.title]=== true ? "": "hidden-date" }>
+                        <div className={ isCheck[card.title]=== true ? "show-date": "hidden-date" }>
+                          <p className="show-cellphone">Due Date (Opcional)</p>
                           <input type="date" name="date" id=""/>
                           <input type="time" name="" id=""/>
                         </div>
@@ -85,7 +86,7 @@ const Schedule = ({category, cards}) =>{
       <DragDropContext onDragEnd={handleOnDragEnd}>
         <div className="main-title">
           <h2>{category === 'all'? 'Ideation' : ''}</h2>
-          <button onChange=''>select all in ideation</button>
+          <button className='selectAllIdeation' onChange=''>{category === 'all'? 'select all in ideation' : ''}</button>
           <p className="show-web right">{category === 'all'? 'Due Date (Opcional)' : ''}</p>
         </div>
 				{category === 'all'&& ideation.map((card, index) =>(
@@ -96,7 +97,7 @@ const Schedule = ({category, cards}) =>{
                   {(provided) =>(
                     <div className="main-div" {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
                       <input className="visible-web" id = {card.id} type="radio" name={card.title} value={card.title} onClick={() => toggle(card.title)} checked={isCheck[card.title]}/>
-                      <div className="main-card">
+                      <div className={ isCheck[card.title]=== true ? "main-card card-cellphone": "main-card" } >
                         <div className={ isCheck[card.title]=== true ? "card-border": "card" } >
                           <div >
                             <h3>{card.title}</h3>
@@ -104,7 +105,8 @@ const Schedule = ({category, cards}) =>{
                           </div>
                           <img src={Image} alt="" className={ isCheck[card.title]=== true ? "img-color": "img-gris" }/>
                         </div>
-                        <div className={ isCheck[card.title]=== true ? "": "hidden-date" }>
+                        <div className={ isCheck[card.title]=== true ? "show-date": "hidden-date" }>
+                          <p className="show-cellphone">Due Date (Opcional)</p>
                           <input type="date" name="date" id=""/>
                           <input type="time" name="" id=""/>
                         </div>
@@ -122,7 +124,7 @@ const Schedule = ({category, cards}) =>{
       <DragDropContext onDragEnd={handleOnDragEnd}>
         <div className="main-title">
           <h2>{category === 'all'? 'Validation' : ''}</h2>
-          <button onChange=''>select all in ideation</button>
+          <button className='selectAllValidation' onChange=''>{category === 'all'? 'select all in validation' : ''}</button>
           <p className="show-web right">{category === 'all'? 'Due Date (Opcional)' : ''}</p>
         </div>
 				{category === 'all'&& validation.map((card, index) =>(
@@ -133,7 +135,7 @@ const Schedule = ({category, cards}) =>{
                   {(provided) =>(
                     <div className="main-div" {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
                       <input className="visible-web" id = {card.id} type="radio" name={card.title} value={card.title} onClick={() => toggle(card.title)} checked={isCheck[card.title]}/>
-                      <div className="main-card">
+                      <div className={ isCheck[card.title]=== true ? "main-card card-cellphone": "main-card" } >
                         <div className={ isCheck[card.title]=== true ? "card-border": "card" } >
                           <div >
                             <h3>{card.title}</h3>
@@ -141,7 +143,8 @@ const Schedule = ({category, cards}) =>{
                           </div>
                           <img src={Image} alt="" className={ isCheck[card.title]=== true ? "img-color": "img-gris" }/>
                         </div>
-                        <div className={ isCheck[card.title]=== true ? "": "hidden-date" }>
+                        <div className={ isCheck[card.title]=== true ? "show-date": "hidden-date" }>
+                          <p className="show-cellphone">Due Date (Opcional)</p>
                           <input type="date" name="date" id=""/>
                           <input type="time" name="" id=""/>
                         </div>

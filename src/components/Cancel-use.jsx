@@ -4,9 +4,9 @@ import '../styles/App.scss'
 const Cancel_use = () =>{
     return (
       <div className = 'cancel_use__container'>
-        <button className="show-cellphone">X</button>
-        <button className="show-web">cancel</button>
-        <button>use this builder schedule</button>
+        <button className="show-cellphone cancelX">X</button>
+        <button className="show-web cancel">cancel</button>
+        <button className="use">use this builder schedule</button>
       </div>
     );
     }

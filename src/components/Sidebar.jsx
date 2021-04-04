@@ -19,10 +19,10 @@ const Sidebar = () =>{
         <button className = {category ==='all' ? 'btn-select' : 'btn-unselect'} onClick={() => setCategory('all')}>All</button>
         <p className="show-web">Templates</p>
         <button className = {category ==='socialInnovation' ? 'btn-select show-web' : 'btn-unselect show-web'} onClick={() => setCategory('socialInnovation')}>Social innovation</button>
-        <select className="show-cellphone" onChange={(event) => setCategory(event.target.value)}>
+        <select className="show-cellphone socialSelect" onChange={(event) => setCategory(event.target.value)}>
           <option value="socialInnovation">Social innovation</option>
-          <option value="Template 1">Template 1</option>
-          <option value="Template 2">Template 2</option>
+          <option value="socialInnovation">Template 1</option>
+          <option value="socialInnovation">Template 2</option>
           <option value="Template 3">Template 3</option>
         </select>
       </div>
